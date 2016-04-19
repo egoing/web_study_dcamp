@@ -11,19 +11,34 @@ $list = array($article1, $article2, $article3, $article4);
 <head>
   <meta charset="utf-8">
   <title><?php print($list[$id]['title']); ?></title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="white" id="target">
+  <h1>JavaScript</h1>
 <?php
-print('<ol>');
+print('<ul>');
 $i = 0;
 while($i < count($list)){
   print('<li><a href="index.php?id='.$i.'">'.$list[$i]['title'].'</a></li>');
   $i = $i + 1;
 }
-print('</ol>');
-
-print('<h3>'.$list[$id]['title'].'</h3>');
-print($list[$id]['description']);
+print('</ul>');
 ?>
-</body>
+<article>
+  <input type="button" value="white" onclick="document.getElementById('target').className='white'">
+  <input type="button" value="black" onclick="document.getElementById('target').className='black'">
+
+<h3><?php print($list[$id]['title']); ?></h3>
+<?php print($list[$id]['description']); ?>
+</article></body>
+
+
+
+
+
+
+
+
+
+
 </html>
