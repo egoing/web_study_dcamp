@@ -32,5 +32,12 @@ print('<h2>'.$title.'</h2>');
 print($description);
 print('</article>');
 ?>
+<a href="write_form.php">쓰기</a>
+<?php
+if(isset($_GET['id'])) {
+  print('<a href="modify_form.php?id='.$_GET['id'].'">수정</a>');
+  print('<a href="delete_form.php?id='.$_GET['id'].'">삭제</a>');  
+}
+?>
 </body>
 </html>
