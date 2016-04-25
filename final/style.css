@@ -1,0 +1,18 @@
+h1 {
+  border-bottom:1px solid grey;
+  padding-bottom:20px;
+  padding-left:20px;
+}
+.black {
+  background-color: black;
+  color:white;
+}
+.white {
+  background-color: white;
+  color:black;
+}
+#nav{
+  border-right:1px solid grey;
+  width:120px;
+  float:left;
+}
